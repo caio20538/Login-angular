@@ -1,24 +1,28 @@
 <main>
-    <section>
-        <img ngSrc="/assets/png/logo.png" alt="principal" width="182" height="59" priority/>
+    <section class="form-section">
+        <img ngSrc="/assets/png/logo.png" alt="logo" width="182" height="59" priority/>
 
-        <h2></h2>
+        <h2>{{title}}</h2>
 
-        <form>
+        <ng-content></ng-content>
 
-        </form>
+        <div class="btn-wrapper">
+            <button class="btn-primary">{{primaryBtnText}}</button>
 
-        <button></button>
+            <div class="divider">
+                <div></div>
+                <span>Or</span>
+                <div></div>
+            </div>
 
-        <div>
-            <span>Or</span>
+            <button class="btn-secondary">{{secondaryBtnText}}</button>
         </div>
 
-        <button></button>
+      
     </section>
     
-    <section>
+    <section class="main-section">
         <h1>You should, MoveIt!</h1>
-        <img ngSrc="/assets/png/main-ilustration.png"/>
+        <img ngSrc="/assets/png/main-ilustration.png" alt="logo" width="597" height="534" priority/>
     </section>
 </main>
